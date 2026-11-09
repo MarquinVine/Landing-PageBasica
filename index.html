@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AV Portfolio</title>
+
+    <!-- Link Fonte Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Redaction:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <!-- Link para o ficheiro CSS externo -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Do Projeto -->
+    <header class="header-page" id="meuHeader">
+        <div class="container">
+            <!-- Icon AV -->
+            <a href="#home-section" class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="logo-icon"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M9.218 2h2.402L16 12.987h-2.402zM4.379 2h2.512l4.38 10.987H8.82l-.895-2.308h-4.58l-.896 2.307H0L4.38 2.001zm2.755 6.64L5.635 4.777 4.137 8.64z" />
+                </svg>
+            </a>
+
+            <!-- Links Header -->
+            <ul>
+                <li><a href="#featured-wrapper">WORK</a></li>
+                <li><a href="#skills-section">CAPABILITIES</a></li>
+                <li><a href="#footer-section">ABOUT</a></li>
+                <li><a href="#footer-section">CONTACT</a></li>
+                <li><button>Let's Talk</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Section Principal -->
+    <section class="home-section" id="home-section">
+        <div class="container hero-layout">
+            <!-- LADO ESQUERDO: Textos e Botões -->
+            <div class="hero-texto">
+                <h5>DIGITAL EXPERIENCES THAT INSPIRE</h5>
+                <h1>DIGITAL <br>DESIGNER</h1>
+                <h5 class="line-text">I design elegant, high-performing digital experiences <br>that merge strategy,
+                    aesthetics, and technology</h5>
+
+                <div class="botoes-container">
+                    <button class="button-home-view">VIEW MY WORK
+                        <!-- View Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                        </svg>
+                    </button>
+
+                    <button class="button-home-resume">DOWNLOAD RESUME
+                        <!-- Download Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-download" viewBox="0 0 16 16">
+                            <path
+                                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                            <path
+                                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
+                        </svg>
+                    </button>
+
+                    <div class="status-freelance">
+                        <h5>AVAILABLE FOR <br><span>FREELANCE</span> <br>PROJECTS</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Stats -->
+    <section class="stats-wrapper">
+        <div class="container">
+            <div class="section-stats">
+                <!-- Item 1: Experiência -->
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                    </div>
+                    <div class="stat-number">6+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+
+                <!-- Item 2: Projetos -->
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+                        </svg>
+                    </div>
+                    <div class="stat-number">40+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+
+                <!-- Item 3: Clientes -->
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5q0 .807-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33 33 0 0 1 2.5.5m.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935m10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935" />
+                        </svg>
+                    </div>
+                    <div class="stat-number">18+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+
+                <!-- Item 4: Países -->
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707m2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708m5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708m2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0" />
+                        </svg>
+                    </div>
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Countries Worked With</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Featured -->
+    <section class="featured-wrapper" id="featured-wrapper">
+        <div class="container">
+            <h5 class="feat-text">FEATURED WORK</h5>
+        </div>
+
+        <div class="container">
+            <div class="cards-conteiner">
+                <!--Finance Card-->
+                <div class="finance-card">
+                    <h1>Finance <br>Dashboad</h1>
+                    <div class="section-subtitle">
+                        <h5>UI/UX DESIGN <br>WEB APPLICATION</h5>
+                        <button class="button-cards">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="icon-finance" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="finance-card">
+                    <h1>Elevate <br>Your Brand</h1>
+                    <div class="section-subtitle">
+                        <h5>WEBSITE DESIGN <br>BRANDING</h5>
+                        <button class="button-cards">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="icon-finance" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="finance-card">
+                    <h1>Wellness <br>Companion</h1>
+                    <div class="section-subtitle">
+                        <h5>MOBILE APP DESIGN <br>HEALTH & LIFESTYLE</h5>
+                        <button class="button-cards">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="icon-finance" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Tools -->
+    <section class="skills-section" id="skills-section">
+        <div class="container container-tools">
+
+            <!-- Coluna da Esquerda: Core Capabilities -->
+            <div class="capabilities-wrapper">
+                <h1 class="title-skills">CORE CAPABILITIES</h1>
+
+                <div class="capabilities-grid">
+                    <div class="skills-texts">
+                        <h3>UI/UX DESIGN</h3>
+                        <p>Crafling incluse leser-cammed irterlance that drive engajament and deight</p>
+                    </div>
+                    <div class="skills-texts">
+                        <h3>WEB DESIGN</h3>
+                        <p>Crafling incluse leser-cammed irterlance that drive engajament and deight</p>
+                    </div>
+                    <div class="skills-texts">
+                        <h3>BRANDING</h3>
+                        <p>Crafling incluse leser-cammed irterlance that drive engajament and deight</p>
+                    </div>
+                    <div class="skills-texts">
+                        <h3>INTERACTION</h3>
+                        <p>Crafling incluse leser-cammed irterlance that drive engajament and deight</p>
+                    </div>
+                    <div class="skills-texts">
+                        <h3>DESIGN SYSTEMS</h3>
+                        <p>Crafling incluse leser-cammed irterlance that drive engajament and deight</p>
+                    </div>
+                    <div class="skills-texts">
+                        <h3>PROTOTYPING</h3>
+                        <p>Crafling incluse leser-cammed irterlance that drive engajament and deight</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coluna da Direita: Tools & Technologies -->
+            <div class="tools-wrapper">
+                <h1 class="title-skills">TOOLS & TECHNOLOGIES</h1>
+
+                <div class="container-skills-tools">
+                    <div class="tool-item">
+                        <img src="https://api.iconify.design/simple-icons/figma.svg?color=white" alt="Figma">
+                        Figma
+                    </div>
+                    <div class="tool-item">
+                        <img src="https://api.iconify.design/simple-icons/adobephotoshop.svg?color=white"
+                            alt="Adobe Photoshop">
+                        Adobe Ph
+                    </div>
+                    <div class="tool-item">
+                        <img src="https://api.iconify.design/simple-icons/adobeillustrator.svg?color=white"
+                            alt="Adobe Illustrator">
+                        Adobe Il
+                    </div>
+                    <div class="tool-item">
+                        <img src="https://api.iconify.design/simple-icons/webflow.svg?color=white" alt="WebFlow">
+                        WebFlow
+                    </div>
+                    <div class="tool-item">
+                        <img src="https://api.iconify.design/simple-icons/framer.svg?color=white" alt="Framer">
+                        Frammer
+                    </div>
+                    <div class="tool-item">
+                        <img src="https://cdn.jsdelivr.net/gh/pheralb/svgl@main/public/library/spline.svg"
+                            style="filter: brightness(0) invert(1);" alt="Spline">
+                        Spline
+                    </div>
+                    <div class="tool-item">
+                        <img src="https://api.iconify.design/simple-icons/adobeaftereffects.svg?color=white"
+                            alt="Adobe After Effects">
+                        Adobe AF
+                    </div>
+                    <div class="tool-item">
+                        <img src="https://api.iconify.design/simple-icons/notion.svg?color=white" alt="Notion">
+                        Notion
+                    </div>
+                </div>
+
+                <div class="certification-title">
+                    <h3 class="tilte-certificantion">CERTIFICATIONS & EDUCATION</h3>
+                </div>
+
+                <div class="certification-iten">
+                    <div class="certification-itens">
+                        <img src="" alt="">
+                        Google UI/UX Design Profissional Certificate
+                    </div>
+                    <div class="certification-itens">
+                        <img src="" alt="">
+                        Google UI/UX Design Profissional Certificate
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section Process-->
+    <section class="process-section">
+        <div class="container">
+            <h5 class="process-name">MY DESIGN PROCESS</h5>
+            <div class="conteiner-process">
+                <!-- 01 DISCOVER -->
+                <div class="process-iten">
+                    <div class="process-header">
+                        <span class="process-num">01</span> <span class="process-title">DISCOVER</span>
+                    </div>
+                    <p class="process-desc">Understanding goals, users, and the problem in depth.</p>
+                    <div class="process-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Seta 1 -->
+                <div class="process-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="2" y1="12" x2="20" y2="12" stroke-dasharray="3 3"></line>
+                        <polyline points="15 7 21 12 15 17"></polyline>
+                    </svg>
+                </div>
+
+                <!-- 02 DEFINE -->
+                <div class="process-iten">
+                    <div class="process-header">
+                        <span class="process-num">02</span> <span class="process-title">DEFINE</span>
+                    </div>
+                    <p class="process-desc">Research, analyze, and turn insights into clear direction.</p>
+                    <div class="process-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                            <line x1="22" y1="2" x2="14" y2="10"></line>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Seta 2 -->
+                <div class="process-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="2" y1="12" x2="20" y2="12" stroke-dasharray="3 3"></line>
+                        <polyline points="15 7 21 12 15 17"></polyline>
+                    </svg>
+                </div>
+
+                <!-- 03 DESIGN -->
+                <div class="process-iten">
+                    <div class="process-header">
+                        <span class="process-num">03</span> <span class="process-title">DESIGN</span>
+                    </div>
+                    <p class="process-desc">Designing intuitive interfaces with clarity and purpose.</p>
+                    <div class="process-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Seta Oculta -->
+                <div class="process-arrow" style="visibility: hidden;">
+                    <svg width="24" height="24" viewBox="0 0 24 24"></svg>
+                </div>
+
+                <!-- 04 DEVELOP -->
+                <div class="process-iten">
+                    <div class="process-header">
+                        <span class="process-num">04</span> <span class="process-title">DEVELOP</span>
+                    </div>
+                    <p class="process-desc">Collaborating with developers to bring ideas to life.</p>
+                    <div class="process-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                            <polyline points="16 6 22 12 16 18"></polyline>
+                            <line x1="14" y1="4" x2="10" y2="20"></line>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Seta Oculta -->
+                <div class="process-arrow" style="visibility: hidden;">
+                    <svg width="24" height="24" viewBox="0 0 24 24"></svg>
+                </div>
+
+                <!-- 05 DELIVER -->
+                <div class="process-iten">
+                    <div class="process-header">
+                        <span class="process-num">05</span> <span class="process-title">DELIVER</span>
+                    </div>
+                    <p class="process-desc">Testing, refining, and launching seamless digital experiences.</p>
+                    <div class="process-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2l.5-.5m10.5-12c-2.5-2.5-7-2-9 0l-5 5c-.75.75-1 2.5-.5 4s2 3 4 3 3.25-.25 4-.5l5-5c2-2 2.5-6.5 0-9z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <section class="footer-section" id="footer-section">
+        <div class="container">
+            <div class="conteiner-footer">
+                
+                <!-- Coluna 1: Título -->
+                <div class="text-footer">
+                    <h1>LET'S CREATE <br>SOMETHING <br>EXTRAORDINARY</h1>
+                </div>
+
+                <!-- Coluna 2: Texto e Botão -->
+                <div class="text-p">
+                    <div class="text-p2">
+                        <p>I'm currently available for freelance <br>projects and collaborations</p>
+                    </div>
+                    <div class="button-conteiner">
+                        <button class="button-footer">LET'S WORK TOGETHER
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="icon-finance" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Coluna 3: Redes Sociais e Contatos com Ícones -->
+                <div class="footer-redes">
+                    <a href="mailto:marcusfdelai@gmail.com" class="footer-redes-itens">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                        </svg>
+                        <span>marcusfdelai@gmail.com</span>
+                    </a>
+                    
+                    <a href="tel:+5519981667044" class="footer-redes-itens">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                          <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.53.53 0 0 0 .132.497L8.283 9.25a.53.53 0 0 0 .497.132l2.19-.547a1.5 1.5 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                        </svg>
+                        <span>(19) 98166-7044</span>
+                    </a>
+
+                    <div class="footer-redes-itens">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        </svg>
+                        <span>Logo ali, virando por ali</span>
+                    </div>
+
+                    <a href="https://github.com/MarcusVinicius-Tech" target="_blank" class="footer-redes-itens">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                        </svg>
+                        <span>MarcusVinicius-Tech</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+
+    <!-- SCRIPT DA ANIMAÇÃO DO HEADER -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('meuHeader');
+            
+            // Se rolar a página mais de 50 pixels, adiciona a classe .scrolled
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>

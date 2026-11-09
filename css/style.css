@@ -1,0 +1,607 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Redaction", serif;
+    background-image: radial-gradient(circle at 50% 30%, #353942 0%, #15161a 100%);
+    color: white; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+/* ==========================================
+   HEADER (ESTADO INICIAL: TRANSPARENTE E MAIOR)
+   ========================================== */
+.header-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    
+    padding: 30px 0; /* Padding maior inicial */
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+    
+    /* Configuração da Animação */
+    transition: all 0.4s ease-in-out; 
+}
+
+/* ESTADO DO HEADER APÓS O SCROLL (ADICIONADO PELO JS) */
+.header-page.scrolled {
+    padding: 10px 0; /* Padding menor */
+    background-color: rgba(21, 22, 26, 0.85); /* Fundo Glassmorphism */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); /* Leve sombra */
+}
+
+.header-page .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-page ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 0; 
+}
+
+.header-page a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 10px;
+    transition: 0.5s;
+}
+
+.header-page a:hover {
+    color: #696969;
+}
+
+.header-page button {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-size: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.header-page button:hover {
+    background-color: #696969;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 48px;
+    height: 48px;
+    transition: 0.5s;
+    color: white;
+}
+
+.logo-icon:hover {
+    color: #696969;
+}
+
+/* ==========================================
+   LAYOUT PRINCIPAL (HERO SECTION)
+   ========================================== */
+.home-section {
+    padding: 40px 0;
+    /* Adicionando margin-top para compensar o header fixo */
+    margin-top: 60px;
+}
+
+.hero-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    min-height: 50vh; 
+}
+
+.hero-texto {
+    flex: 1;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.home-section h5 {
+    margin: 7px 0;
+    color: #a8a8a8;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+.home-section h1 {
+    font-size: 110px;
+    line-height: 1.1; 
+}
+
+.home-section .line-text {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #a8a8a8;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.botoes-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    align-self: stretch;
+}
+
+.home-section .button-home-view {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    transition: 0.3s;
+}
+
+.home-section .button-home-resume {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 15px 10px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    gap: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+
+.home-section .button-home-view:hover {
+    background-color: #e0e0e0;
+}
+
+.home-section .button-home-resume:hover {
+    color: #a8a8a8;
+}
+
+.status-freelance {
+    margin-left: auto;
+    font-size: 10px;
+    color: #696969;
+    letter-spacing: 3px;
+    line-height: 1.4;
+    text-align: right;
+}
+
+.status-freelance span {
+    font-size: 30px;
+    color: white;
+}
+
+/* ==========================================
+   STATS SECTION
+   ========================================== */
+.stats-wrapper {
+    padding: 20px 0 40px 0;
+}
+
+.section-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #24262b;
+    border-radius: 12px;
+    padding: 30px 20px;
+    color: white;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    border-right: 1px solid #333333;
+}
+
+.stat-item:last-child {
+    border-right: none;
+}
+
+.stat-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.stat-number {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888888;
+}
+
+/* ==========================================
+   FEATURED SECTION
+   ========================================== */
+.featured-wrapper {
+    padding: 40px 0;
+}
+
+.feat-text {
+    color: #696969;
+    font-size: 12px;   
+    letter-spacing: 2px;
+    padding: 20px 0;
+}
+
+.cards-conteiner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.finance-card {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0.8rem 1.2rem 1rem;
+    margin: 0 10px;
+    border: 1px solid #696969;
+    border-radius: 25px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.finance-card h1 {
+    font-size: 40px;
+    line-height: 2.5rem;
+    text-align: left;
+}
+
+.finance-card h5 {
+    color: #696969;
+    font-size: 10px;
+}
+
+.section-subtitle {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    padding-top: 1rem;
+    align-items: center;
+}
+
+.button-cards {
+    padding: 0.8rem 1rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: #15161a;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.button-cards:hover {
+    background-color: white;
+    color: #15161a;
+    border: 1px solid #15161a;
+    transition: 0.5s;
+}
+
+/* ==========================================
+   SKILLS & TOOLS SECTION
+   ========================================== */
+.skills-section {
+    padding: 60px 0;
+}
+
+.container-tools {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+.title-skills {
+    font-size: 12px;
+    letter-spacing: 4px;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.capabilities-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem 2rem;
+}
+
+.skills-texts h3 {
+    font-size: 16px;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.skills-texts p {
+    color: #696969;
+    font-size: 10px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    padding: 0.8rem 0;
+}
+
+.container-skills-tools {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 3rem 2.5rem;
+}
+
+.tool-item {
+    display: flex;
+    align-items: center;
+    gap: 12px; 
+    font-size: 16px;
+    color: white;
+}
+
+.tool-item img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+@media (max-width: 992px) {
+    .container-tools {
+        grid-template-columns: 1fr;
+    }
+}
+
+.certification-title {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0 0.5rem;
+    border-bottom: 1px solid #696969;
+}
+
+.tilte-certificantion {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.certification-iten {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    margin: 1rem 0 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #353942;
+    border-radius: 10px;
+}
+
+.certification-itens {
+    padding: 1rem 1rem;
+    border: 1px solid #888888;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+
+/* ==========================================
+   PROCESS SECTION
+   ========================================== */
+.process-section {
+    padding: 40px 0 80px 0;
+}
+
+.process-name {
+    color: #696969;
+    font-size: 12px;   
+    letter-spacing: 2px;
+    padding: 0.3rem 0;
+    margin-bottom: 20px;
+}
+
+.conteiner-process {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(43, 45, 52, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    gap: 1rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.process-iten {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1;
+    gap: 15px;
+}
+
+.process-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.process-num {
+    color: #7b7b7b;
+    font-weight: 400;
+}
+
+.process-title {
+    color: white;
+    font-weight: bold;
+}
+
+.process-desc {
+    color: #a8a8a8;
+    font-size: 11px;
+    line-height: 1.6;
+    min-height: 55px;
+}
+
+.process-icon {
+    color: white;
+}
+
+.process-arrow {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    color: #4a4a4a;
+}
+
+/* ==========================================
+   FOOTER SECTION 
+   ========================================== */
+.footer-section {
+    padding: 20px 0 80px 0; 
+}
+
+.conteiner-footer {
+    padding: 3.5rem 2.5rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    border-radius: 12px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(43, 45, 52, 0.6); 
+    backdrop-filter: blur(10px);
+    gap: 2rem;
+}
+
+/* Coluna 1 - Título */
+.text-footer {
+    flex: 1;
+}
+
+.text-footer h1 {
+    letter-spacing: 2px;
+    font-size: 2.2rem;
+    line-height: 1.2;
+}
+
+/* Coluna 2 - Meio (Texto e Botão) */
+.text-p {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    color: #a8a8a8;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.button-footer {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 11px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.button-footer:hover {
+    background-color: #e0e0e0;
+}
+
+/* Coluna 3 - Redes e Contatos */
+.footer-redes {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    padding-left: 2.5rem;
+}
+
+.footer-redes-itens {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #a8a8a8;
+    font-size: 13px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-redes-itens svg {
+    color: white; 
+}
+
+a.footer-redes-itens:hover {
+    color: white;
+}
